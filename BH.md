@@ -1,5 +1,9 @@
-1. Computers that do not have LAPS: ```MATCH (c:Computer {haslaps:false}) RETURN c.name,c.operatingsystem```
-2. Unsupported Operating Systems: 
+1. Computers that do not have LAPS: 
+
+```MATCH (c:Computer {haslaps:false}) RETURN c.name,c.operatingsystem```
+
+3. Unsupported Operating Systems: 
+
 ```MATCH (c:Computer {enabled: true})
 WHERE toLower(c.operatingsystem) CONTAINS toLower('2000') OR
       toLower(c.operatingsystem) CONTAINS toLower('2003') OR
