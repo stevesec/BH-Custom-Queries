@@ -17,4 +17,4 @@ WHERE toLower(c.operatingsystem) CONTAINS toLower('2000') OR
       NOT toLower(c.operatingsystem) CONTAINS toLower('2022') AND
       NOT toLower(c.operatingsystem) CONTAINS toLower('10') AND
       NOT toLower(c.operatingsystem) CONTAINS toLower('11')
-RETURN c.name, c.operatingsystem```
+RETURN c.name, c.operatingsystem
