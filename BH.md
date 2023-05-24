@@ -1,6 +1,6 @@
 1. Computers that do not have LAPS: 
 
-```MATCH (c:Computer {haslaps:false}) RETURN c.name,c.operatingsystem```
+``MATCH (c:Computer {haslaps:false}) RETURN c.name,c.operatingsystem``
 
 3. Unsupported Operating Systems: 
 
